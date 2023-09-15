@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/aem-community",
+        "create path (nt:unstructured) /content/dam/aem-community/jcr:content",
+        "set properties on /content/dam/aem-community/jcr:content\n  set cq:conf{String} to /conf/aem-community\n  set jcr:title{String} to \"AEM Community\"\nend"
+    ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/aem-community" mode="merge"/>
+    <filter root="/content/aem-community" mode="merge"/>
+    <filter root="/content/dam/aem-community" mode="merge">
+        <exclude pattern="/content/dam/aem-community(/.*)?"/>
+        <include pattern="/content/dam/aem-community/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/aem-community/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/aem-community" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-themes/aem-community" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/aem-community" mode="merge"/>
+    <filter root="/content/dam/aem-community/sample_logo.png" mode="merge"/>
+    <filter root="/content/dam/aem-community/sample_terms.png" mode="merge"/>
+    <filter root="/content/dam/aem-community/wknd_logo.png" mode="merge"/>
+</workspaceFilter>
