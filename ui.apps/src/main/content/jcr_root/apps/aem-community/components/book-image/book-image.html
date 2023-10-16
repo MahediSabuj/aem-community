@@ -1,0 +1,11 @@
+<div data-sly-use.image="com.aem.community.core.components.models.BookImage"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  data-sly-test="${image.src}"
+  class="book-image__inner"
+  itemscope itemtype="https://schema.org/ImageObject">
+    <img src="${image.src}"
+      class="book-image__image"
+      itemprop="contentUrl"
+      alt="${image.alt}"/>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !image.src, classAppend = 'book-image'}"></sly>
